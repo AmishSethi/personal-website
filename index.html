@@ -19,13 +19,13 @@
             <td style="padding:2.5%;width:63%;vertical-align:middle">
               <p class="name" style="text-align: center;">Amish Sethi</p>
               <p>
-                I'm an undergraduate student at the <a href="https://www.seas.upenn.edu/">University of Pennsylvania</a>, currently in my junior year pursuing a Bachelor's and Master's degree in Computer&nbsp;Science, with an expected graduation for both in&nbsp;2026.
+                I'm an undergraduate student at the <a href="https://www.seas.upenn.edu/">University of Pennsylvania</a>, currently in my senior year pursuing a Bachelor's and Master's degree in Computer&nbsp;Science, with an expected graduation for both in&nbsp;2026.
               </p>
               <p>
-                I work with <a href="https://www.linkedin.com/in/ai4code/">Professor&nbsp;Mayur&nbsp;Naik</a> on projects that push the boundaries of deep learning and neurosymbolic AI. My interests span neural-network optimization, scalable model compression, and integrating symbolic reasoning with neural architectures. I enjoy building efficient, interpretable systems that extend the capabilities of large language and vision models.
+                I work with <a href="https://www.linkedin.com/in/ai4code/">Professor&nbsp;Mayur&nbsp;Naik</a> on projects that push the boundaries of deep learning and neurosymbolic AI. My interests span neural-network optimization, scalable model compression, integrating symbolic reasoning with neural architectures, and building foundation models for video understanding. I enjoy building efficient, interpretable systems that extend the capabilities of large language and vision models.
               </p>
               <p>
-                I’m incredibly grateful to <a href="https://www.linkedin.com/in/ai4code/">Professor Mayur Naik</a> for his continuous support and guidance throughout my research journey. I also deeply appreciate the mentorship and inspiration from the PhD students I’ve worked closely with: 
+                I'm incredibly grateful to <a href="https://www.linkedin.com/in/ai4code/">Professor Mayur Naik</a> for his continuous support and guidance throughout my research journey. I also deeply appreciate the mentorship and inspiration from the PhD students I've worked closely with: 
                 <a href="https://nvelingker.github.io" target="_blank">Neelay Velingker</a>, 
                 <a href="https://oscarxzq.github.io" target="_blank">Oscar Xu</a>, 
                 <a href="https://www.seas.upenn.edu/~asnaik/" target="_blank">Aaditya Naik</a>, and 
@@ -51,16 +51,12 @@
             <td style="padding:16px;width:100%;vertical-align:middle">
               <h2>News</h2>
               <ul class="news-list">
+                <li>(2024/09/18) Our paper <a href="https://www.cis.upenn.edu/~jianih/res/papers/neurips25_esca.pdf" target="_blank">
+                  <em>ESCA: Contextualizing Embodied Agents via Scene-Graph Generation</em></a>
+                  is accepted to <strong>NeurIPS 2025</strong> as a <strong>Spotlight</strong> (top 3%)! 🎉</li>
                 <li>(2025/05/01) Our paper <a href="https://arxiv.org/pdf/2410.03348" target="_blank">
                     <em>Dolphin: A Programmable Framework for Scalable Neurosymbolic Learning</em></a>
                     is accepted to <strong>ICML 2025</strong>! 🎉</li>
-                <!-- ----- Optional older items for continuity -----
-                <li>(2024/01/16) Our paper <a href="#">Initializing Models with Larger Ones</a>
-                    was accepted to ICLR 2024 as a Spotlight presentation!</li>
-                <li>(2023/04/24) Our paper <a href="#">Dropout Reduces Underfitting</a>
-                    was accepted to ICML 2023!</li>
-                <li>(2023/03/31) I will join the University of Pennsylvania as a PhD student (Fall 2023).</li>
-                -->
               </ul>
             </td>
           </tr>
@@ -73,7 +69,7 @@
             <td style="padding:16px;width:100%;vertical-align:middle">
               <h2>Research</h2>
               <p>
-                I'm interested in deep learning, generative AI, and neurosymbolic AI. Most of my research focuses on optimizing large language models through efficient finetuning, quantization, and pruning, and on exploring how symbolic reasoning can be woven into neural networks for greater interpretability and control. 
+                I'm interested in deep learning, generative AI, and neurosymbolic AI. Most of my research focuses on optimizing large language models through efficient finetuning, quantization, and pruning, exploring how symbolic reasoning can be integrated into neural networks for greater interpretability and control, and building foundation models for video understanding to enable trustworthy embodied AI systems.
               </p>
             </td>
           </tr>
@@ -81,7 +77,38 @@
 
         <!-- Project Section -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;">
-          <!-- Project 1: Dolphin -->
+          
+          <!-- Project 1: Delta Activations -->
+          <tr>
+            <td style="padding:20px;width:35%;vertical-align:middle">
+              <img src="images/delta.png" alt="project image" style="width:100%; border-radius:10px;">
+            </td>
+            <td style="padding:20px;width:65%;vertical-align:middle">
+              <papertitle>Delta Activations: A Representation for Finetuned Large Language Models</papertitle><br>
+              Zhiqiu Xu<sup>*</sup>, <strong><em>Amish Sethi</em></strong><sup>*</sup>, Mayur Naik, Ser-Nam Lim<br>
+              <em>Under review at ICLR 2026</em><br>
+              <a href="https://arxiv.org/abs/2509.04442">arXiv</a> / 
+              <a href="https://oscarxzq.github.io/delta_activation/">website</a><br><br>
+              <p>Delta Activations represents finetuned models by measuring shifts in their internal activations relative to a base model. This approach clusters models by domain and enables retrieval using only 20 examples. We finetuned and released over 700 open-source models on Hugging Face, demonstrating the utility of this representation for model selection and merging in building reliable model ecosystems.</p>
+            </td>
+          </tr>
+
+          <!-- Project 2: ESCA/VINE -->
+          <tr>
+            <td style="padding:20px;width:35%;vertical-align:middle">
+              <img src="images/vine_pipeline_final.png" alt="project image" style="width:100%; border-radius:10px;">
+            </td>
+            <td style="padding:20px;width:65%;vertical-align:middle">
+              <papertitle>ESCA: Contextualizing Embodied Agents via Scene-Graph Generation</papertitle><br>
+              Jiani Huang<sup>*</sup>, <strong><em>Amish Sethi</em></strong><sup>*</sup>, Matthew Kuo<sup>*</sup>, Mayank Keoliya, Neelay Velingker, JungHo Jung, Ziyang Li, Ser-Nam Lim, Mayur Naik<br>
+              <em>NeurIPS 2025 <strong>Spotlight</strong> (top 3%)</em><br>
+              <a href="https://www.cis.upenn.edu/~jianih/res/papers/neurips25_esca.pdf">paper</a> / 
+              <a href="https://video-fm.github.io">website</a><br><br>
+              <p>ESCA addresses that up to 69% of embodied AI failures stem from perception errors. We developed VINE, a foundation model that extracts spatio-temporal scene graphs from video to provide explicit spatial context for vision-language models. Our approach improved success rates by up to 10%, spatial reasoning by 14.6%, and reduced perception errors from 69% to 30% on EmbodiedBench without requiring model retraining.</p>
+            </td>
+          </tr>
+
+          <!-- Project 3: Dolphin -->
           <tr>
             <td style="padding:20px;width:35%;vertical-align:middle">
               <img src="images/dolphin.png" alt="project image" style="width:100%; border-radius:10px;">
@@ -89,73 +116,67 @@
             <td style="padding:20px;width:65%;vertical-align:middle">
               <papertitle>Dolphin: A Programmable Framework for Scalable Neurosymbolic Learning</papertitle><br>
               Aaditya Naik, Jason Liu, Claire Wang, <strong><em>Amish Sethi</em></strong>, Saikat Dutta, Mayur Naik, Eric Wong<br>
-              <em>ICML 2025 </em> <br>
+              <em>ICML 2025</em><br>
               <a href="https://arxiv.org/pdf/2410.03348">arXiv</a><br><br>
               <p>DOLPHIN is a novel framework combining symbolic reasoning and neural computation using CPU-GPU hybrid execution. Its execution of vectorized probabilistic computations on the GPU allows it to achieve up to 62× faster convergence than baselines across 13 benchmarks spanning text, image, and video modalities.</p>
             </td>
           </tr>
 
-          <!-- Project 2: CLAM -->
+          <!-- Project 4: CLAM -->
           <tr>
             <td style="padding:20px;width:35%;vertical-align:middle">
               <img src="images/clam.png" alt="project image" style="width:100%; border-radius:10px;">
             </td>
             <td style="padding:20px;width:65%;vertical-align:middle">
               <papertitle>CLAM: Unifying Finetuning, Quantization, and Pruning by Chaining LLM Adapter Modules</papertitle><br>
-              Neelay Velingker, <strong><em>Amish Sethi</em></strong>, Jason Liu, William Dodds, Zhiqiu Xu, Saikat Dutta, Mayur Naik, Eric Wong<br>
+              Neelay Velingker, <strong><em>Amish Sethi</em></strong><sup>*</sup>, Jason Liu<sup>*</sup>, William Dodds<sup>*</sup>, Zhiqiu Xu, Saikat Dutta, Mayur Naik, Eric Wong<br>
               <em>Workshop on Efficient Systems for Foundation Models II @ ICML 2024</em><br>
               <a href="https://openreview.net/pdf?id=1mKtFkElnu">paper</a> / 
               <a href="https://github.com/slimscale-ai/slimscale">code</a><br><br>
-              <p>CLAM is a framework unifying parameter-efficient finetuning, quantization, and pruning for LLMs. It enables chaining of adapters with low overhead and high modularity, outperforming state-of-the-art methods by up to 6.5%. CLAM achieves superior trade-offs in compression and downstream performance, beating QLoRA while effectvely halving the number of active bits</p>
+              <p>CLAM is a framework unifying parameter-efficient finetuning, quantization, and pruning for LLMs. It enables chaining of adapters with low overhead and high modularity, outperforming state-of-the-art methods by up to 6.5%. CLAM achieves superior trade-offs in compression and downstream performance, beating QLoRA while effectively halving the number of active bits.</p>
             </td>
           </tr>
 
-          <!-- Project 3: LoRA -->
-          <tr>
-            <td style="padding:20px;width:35%;vertical-align:middle">
-              <img src="images/lora.png" alt="project image" style="width:100%; border-radius:10px;">
-            </td>
-            <td style="padding:20px;width:65%;vertical-align:middle">
-              <papertitle>Activations Aren’t Cheap in LoRA, Weights Are</papertitle><br>
-              Neelay Velingker, Zhiqiu Xu, <strong><em>Amish Sethi</em></strong>, William Dodds, Mayur Naik<br>
-              <em>ICLR 2025 Submission</em><br>
-              <a href="https://openreview.net/pdf?id=3ylNuZXtMg">paper</a><br><br>
-              <p>We provide a semantically-equivalent computation graph reformulation for LoRA and other PeFT techniques that saves memory and accelerates training. Under practical conditions, this leads to up to a 1.4× reduction in max memory usage and latency for LoRA finetuning across language and diffusion transformers, without degrading predictive performance.</p>
-            </td>
-          </tr>
-
-          <!-- Project 4: Alzheimer’s -->
+          <!-- Project 5: Alzheimer's -->
           <tr>
             <td style="padding:20px;width:35%;vertical-align:middle">
               <img src="images/alz.png" alt="project image" style="width:100%; border-radius:10px;">
             </td>
             <td style="padding:20px;width:65%;vertical-align:middle">
-              <papertitle>Functional Genetic Biomarkers of Alzheimer’s Disease and Gene Expression from Peripheral Blood</papertitle><br>
-              <strong>Andrew Ni</strong><sup>*</sup>, <strong>Amish Sethi</strong><sup>*</sup> (equal contribution)<br>
-              <em>International Science and Engineering Fair 2020</em><br>
+              <papertitle>Functional Genetic Biomarkers of Alzheimer's Disease and Gene Expression from Peripheral Blood</papertitle><br>
+              <strong>Amish Sethi</strong><sup>*</sup>, <strong>Andrew Ni</strong><sup>*</sup><br>
+              <em>International Science and Engineering Fair 2021</em><br>
               <a href="https://www.biorxiv.org/content/10.1101/2021.01.15.426891v1.full.pdf">paper</a><br><br>
-              <p>This project utilized machine learning, clustering, and dimensionality reduction algorithms in <code>scikit-learn</code> to identify which genes are expressed differently between those with Alzheimer’s and a control group. A model trained on this gene expression data could predict likelihood of Alzheimer’s with 98% accuracy.</p>
-              <span style="font-size: 90%; color: gray;">Cited over 6 times and viewed over 1,000 times on biorxiv.</span>
+              <p>This project utilized machine learning, clustering, and dimensionality reduction algorithms in <code>scikit-learn</code> to identify which genes are expressed differently between those with Alzheimer's and a control group. A model trained on this gene expression data could predict likelihood of Alzheimer's with 98% accuracy.</p>
+              <span style="font-size: 90%; color: gray;">Cited over 8 times and viewed over 1,000 times on biorxiv.</span>
+            </td>
+          </tr>
+
+          <!-- Equal contribution note -->
+          <tr>
+            <td colspan="2" style="padding:20px;padding-top:10px;">
+              <p style="font-size: 85%; color: #666; margin:0;"><sup>*</sup> Equal contribution</p>
             </td>
           </tr>
         </table>
+
         <!-- Teaching Section -->
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;margin-top:40px;">
           <tr>
             <td style="padding:16px;width:100%;vertical-align:middle">
               <h2>Teaching and Mentorship</h2>
               <p>
-                In the <strong>Fall of 2024</strong>, I served as the Head Teaching Assistant (TA) for <a href="https://llm-class.github.io" target="_blank">CIS 7000: Large Language Models</a>, the University of Pennsylvania’s first dedicated course on LLMs. 
+                In the <strong>Fall of 2024</strong>, I served as the Head Teaching Assistant (TA) for <a href="https://llm-class.github.io" target="_blank">CIS 7000: Large Language Models</a>, the University of Pennsylvania's first dedicated course on LLMs. 
                 The course enrolled over <strong>120 students</strong> and covered the theory, design, training, compression, deployment, and application of large language models.
               </p>
               <p>
                 As Head TA, I was responsible for:
                 <ul>
-                  <li>Planning the course cirriculum</li>
+                  <li>Planning the course curriculum</li>
                   <li>Designing and implementing homework assignments</li>
                   <li>Holding office hours and supporting students throughout the semester</li>
                   <li>Creating several lecture slide decks</li>
-                  <li>Delivering some lectures on efficient finetuning, adaptation, and evaluation</li>
+                  <li>Delivering lectures on efficient finetuning, adaptation, and evaluation</li>
                 </ul>
                 The course received a <strong>TA quality rating of 3.15</strong> and an <strong>overall course quality rating of 3.01</strong> out of 4.
               </p>
@@ -186,7 +207,7 @@
             <h2>Academic Services</h2>
             <p>
               I served as a reviewer for the <a href="https://icml.cc/virtual/2024/workshop/29965" target="_blank">
-              <em>Workshop on Efficient Systems for Foundation Models II</em> at ICML 2024</a>.
+              <em>Workshop on Efficient Systems for Foundation Models II</em> at ICML 2024</a>, <a href="https://aaai.org/conference/aaai/aaai-26/" target="_blank">AAAI 2026</a>, and <a href="https://iclr.cc/Conferences/2026" target="_blank">ICLR 2026</a>.
             </p>
           </td>
         </tr>
@@ -196,7 +217,7 @@
             <h2>Grant Writing</h2>
             <p>
               I authored a successful proposal for the <a href="https://curf.upenn.edu/content/grants-faculty-mentoring-undergraduate-research" target="_blank">
-              Grant for Faculty Mentoring Undergraduate Research (GfFMUR)</a>, awarded by the University of Pennsylvania. This competitive grant supported undergraduate research efforts and resulted in an $8,000 award to fund mentorship and research on neurosymbolic AI.
+              Grant for Faculty Mentoring Undergraduate Research (GfFMUR)</a>, awarded by the University of Pennsylvania. This competitive grant supported undergraduate research efforts and resulted in an <strong>$8,000 award</strong> to fund mentorship and research on neurosymbolic AI.
             </p>
           </td>
         </tr>
