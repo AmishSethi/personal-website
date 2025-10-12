@@ -100,11 +100,28 @@
             </td>
             <td style="padding:20px;width:65%;vertical-align:middle">
               <papertitle>ESCA: Contextualizing Embodied Agents via Scene-Graph Generation</papertitle><br>
-              Jiani Huang<sup>*</sup>, <strong><em>Amish Sethi</em></strong><sup>*</sup>, Matthew Kuo<sup>*</sup>, Mayank Keoliya, Neelay Velingker, JungHo Jung, Ziyang Li, Ser-Nam Lim, Mayur Naik<br>
+              Jiani Huang<sup>*</sup>, <strong><em>Amish Sethi<sup>*</sup></em></strong><sup>*</sup>, Matthew Kuo<sup>*</sup>, Mayank Keoliya, Neelay Velingker, JungHo Jung, Ziyang Li, Ser-Nam Lim, Mayur Naik<br>
               <em>NeurIPS 2025 <strong>Spotlight</strong> (top 3%)</em><br>
               <a href="esca.pdf">paper</a> / 
+              <a href="https://video-fm.github.io">website</a> 
+              <p>ESCA addresses that up to 69% of embodied AI failures stem from perception errors. Using VINE, a foundation model that extracts spatio-temporal scene graphs from video, ESCA provides explicit spatial context for vision-language models. Our approach improved success rates by up to 10%, spatial reasoning by 14.6%, and reduced perception errors from 69% to 30% on EmbodiedBench without requiring model retraining.</p>
+            </td>
+          </tr>
+
+          <!-- Project 3: VINE -->
+          <tr>
+            <td style="padding:20px;width:35%;vertical-align:middle">
+              <img src="images/vine.png" alt="project image" style="width:100%; border-radius:10px;">
+            </td>
+            <td style="padding:20px;width:65%;vertical-align:middle">
+              <papertitle>VINE: A Foundation Model for Video Understanding</papertitle><br>
+              <strong><em>Amish Sethi<sup>*</sup></em></strong>, Jiani Huang<sup>*</sup>, Matthew Kuo<sup>*</sup>, Ziyang Li, Mayank Keoliya, Neelay Velingker, Mayur Naik, Sernam Lim<br>
+              <em>Foundation Model</em><br>
               <a href="https://video-fm.github.io">website</a><br><br>
-              <p>ESCA addresses that up to 69% of embodied AI failures stem from perception errors. We developed VINE, a foundation model that extracts spatio-temporal scene graphs from video to provide explicit spatial context for vision-language models. Our approach improved success rates by up to 10%, spatial reasoning by 14.6%, and reduced perception errors from 69% to 30% on EmbodiedBench without requiring model retraining.</p>
+              <a href="https://github.com/video-fm/LASER_v0">code</a> / 
+              <a href="https://huggingface.co/video-fm/vine_v0">model</a> / 
+              <a href="https://huggingface.co/datasets/video-fm/ESCA-video-87K">dataset</a><br><br>
+              <p>VINE is a foundation model that transforms video into structured scene graphs capturing entities, attributes, spatial relationships, and temporal dynamics. Given a video and optional keywords, VINE outputs probabilistic scene graphs that provide rich semantic structure beyond object detection. Trained on 87K+ videos using neurosymbolic learning, VINE is both promptable and fine-tuneable for diverse applications from contextualizing vision-language models to enabling robot learning from demonstration.</p>
             </td>
           </tr>
 
@@ -117,7 +134,7 @@
               <papertitle>Dolphin: A Programmable Framework for Scalable Neurosymbolic Learning</papertitle><br>
               Aaditya Naik, Jason Liu, Claire Wang, <strong><em>Amish Sethi</em></strong>, Saikat Dutta, Mayur Naik, Eric Wong<br>
               <em>ICML 2025</em><br>
-              <a href="https://arxiv.org/pdf/2410.03348">arXiv</a><br><br>
+              <a href="https://arxiv.org/pdf/2410.03348">Publication</a><br><br>
               <p>DOLPHIN is a novel framework combining symbolic reasoning and neural computation using CPU-GPU hybrid execution. Its execution of vectorized probabilistic computations on the GPU allows it to achieve up to 62× faster convergence than baselines across 13 benchmarks spanning text, image, and video modalities.</p>
             </td>
           </tr>
@@ -144,7 +161,7 @@
             </td>
             <td style="padding:20px;width:65%;vertical-align:middle">
               <papertitle>Functional Genetic Biomarkers of Alzheimer's Disease and Gene Expression from Peripheral Blood</papertitle><br>
-              <strong>Amish Sethi</strong><sup>*</sup>, <strong>Andrew Ni</strong><sup>*</sup><br>
+              <strong>Amish Sethi</strong><sup>*</sup>, Andrew Ni<sup>*</sup><br>
               <em>International Science and Engineering Fair 2021</em><br>
               <a href="https://www.biorxiv.org/content/10.1101/2021.01.15.426891v1.full.pdf">paper</a><br><br>
               <p>This project utilized machine learning, clustering, and dimensionality reduction algorithms in <code>scikit-learn</code> to identify which genes are expressed differently between those with Alzheimer's and a control group. A model trained on this gene expression data could predict likelihood of Alzheimer's with 98% accuracy.</p>
